@@ -91,16 +91,10 @@ function draw() {
   
   //creating continous opponent players
   var select_oppPlayer = Math.round(random(1,3));
+    
+    //make the if statement here
   
-  if (World.frameCount % 150 == 0) {
-    if (select_oppPlayer == 1) {
-      pinkCyclists();
-    } else if (select_oppPlayer == 2) {
-      yellowCyclists();
-    } else {
-      redCyclists();
-    }
-  }
+ 
   
    if(pinkCG.isTouching(mainCyclist)){
      gameState = END;
@@ -172,15 +166,5 @@ function redCyclists(){
         player3.setLifetime=170;
         redCG.add(player3);
 }
+// make function reset here
 
-function reset(){
-  gameState = PLAY;
-  gameOver.visible = false;
-  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
-  
-  pinkCG.destroyEach();
-  yellowCG.destroyEach();
-  redCG.destroyEach();
-  
-  distance = 0;
-}
