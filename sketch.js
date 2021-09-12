@@ -172,8 +172,8 @@ function reset(){
   gameOver.visible = false;
   mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
   //write pink yellow red
-  CG.destroyEach();
-  CG.destroyEach();
-  CG.destroyEach();
-  
+ pinkCG.destroyEach();
+  yellowCG.destroyEach();
+  redCG.destroyEach();
+  distance=0
 }
