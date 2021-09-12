@@ -167,4 +167,13 @@ function redCyclists(){
         redCG.add(player3);
 }
 // make function reset here
-
+function reset(){
+  gameState = PLAY;
+  gameOver.visible = false;
+  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+  //write pink yellow red
+  CG.destroyEach();
+  CG.destroyEach();
+  CG.destroyEach();
+  
+}
